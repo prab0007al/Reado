@@ -1,3 +1,68 @@
+# Virtual Environment
+venv/
+backend/venv/
+.venv/
+env/
+ENV/
 
-/venv
-Reado\backend\.env
+# Environment Variables
+.env
+backend/.env
+*.env
+!.env.example
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+tests/__pycache__/
+
+# Build/Distribution
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+logs/
+
+# Database temporary files
+*.db-shm
+*.db-wal
+*.sqlite3-shm
+*.sqlite3-wal
+backend/chroma_db/*.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary
+*.tmp
+*.bak
+*~
