@@ -1,0 +1,74 @@
+.filter-panel {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.filter-panel-loading {
+  padding: 1rem;
+  color: #666;
+  font-style: italic;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  color: #333;  /* ← Dark text color */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Dropdown options styling */
+.filter-select option {
+  background: white;
+  color: #333;  /* ← Dark text for options */
+  padding: 0.5rem;
+  font-weight: 500;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.filter-select:hover {
+  border-color: #667eea;
+  background: #f8f9ff;
+}
+
+/* Active/selected state */
+.filter-select:active,
+.filter-select:focus-visible {
+  border-color: #764ba2;
+}
+
+@media (max-width: 768px) {
+  .filter-panel {
+    flex-direction: column;
+  }
+  
+  .filter-group {
+    min-width: 100%;
+  }
+}

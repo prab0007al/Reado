@@ -12,7 +12,13 @@ class Settings(BaseSettings):
     API_V1_PREFIX: str = "/api"
     
     # CORS settings
-    CORS_ORIGINS: list = ["http://localhost:5173", "http://localhost:3000"]
+    CORS_ORIGINS: list = [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173"
+]
+
     
     # Vector store settings
     VECTOR_DB_PERSIST_DIRECTORY: str = "./chroma_db"

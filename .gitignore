@@ -8,6 +8,7 @@ ENV/
 # Environment Variables
 .env
 backend/.env
+frontend/.env
 *.env
 !.env.example
 
