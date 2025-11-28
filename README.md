@@ -1,4 +1,4 @@
-# Reado# Reado - AI Book Recommender
+# Reado - AI Book Recommender
 
 Full-stack book recommendation system using semantic search and sentiment analysis.
 
@@ -10,9 +10,13 @@ Full-stack book recommendation system using semantic search and sentiment analys
 
 ## Tech Stack
 - **Backend:** FastAPI, Python, ChromaDB, LangChain
-- **Frontend:** Coming soon (React)
+- **Frontend:** (React)
 - **ML:** sentence-transformers, HuggingFace
 
 ## Quick Start
+in backend directory run: 
+ uvicorn app.main:app --reload
 
+in frontend directory run:
+ npm run dev   
 ### Backend
